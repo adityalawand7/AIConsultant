@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradio App Portal</title>
+    <style>
+        /* General Styles */
+        body {
+            background: linear-gradient(to right, #141e30, #243b55) !important;
+            color: white !important;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 1.5s ease-out, backgroundAnimation 5s infinite alternate;
+        }
+
+        /* Header Styles */
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            letter-spacing: 3px;
+            animation: slideIn 1s ease-out;
+        }
+
+        /* Button Container */
+        .button-container {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        /* Button Styles */
+        .btn {
+            padding: 20px 40px;
+            font-size: 20px;
+            background-color: #3b5998;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Button Hover Effects */
+        .btn:hover {
+            background-color: #2d4373;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Background Animation */
+        @keyframes backgroundAnimation {
+            0% { background: linear-gradient(to right, #141e30, #243b55); }
+            50% { background: linear-gradient(to right, #243b55, #141e30); }
+            100% { background: linear-gradient(to right, #141e30, #243b55); }
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Slide-in Animation for Header */
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 90%;
+                font-size: 18px;
+                padding: 15px;
+            }
+        }
+
+        /* Footer Styles */
+        .footer {
+            margin-top: 50px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the Optiv AI Consultant</h1>
+
+    <div class="button-container">
+        <a href="https://f787e28821642a0022.gradio.live/" class="btn" target="_blank">
+            Document Review Portal
+        </a>
+        <a href="https://45e553987669f1e987.gradio.live/" class="btn" target="_blank">
+            Interview Notes Portal
+        </a>
+        <a href="https://08d835c208bfbd3ced.gradio.live/" class="btn" target="_blank">
+            Maturity Assigner Portal
+        </a>
+        <a href="https://4c3d1ddf3a9f6ba983.gradio.live/" class="btn" target="_blank">
+            Recommendation Portal
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>For more information, visit <a href="https://optiv.com">Optiv</a></p>
+    </div>
+
+
+</body>
+</html>
